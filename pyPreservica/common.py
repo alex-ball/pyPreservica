@@ -128,7 +128,7 @@ def strtobool(val) -> bool:
         raise ValueError("invalid truth value %r" % (val,))
 
 
-def _make_stored_zipfile(base_name, base_dir, owner, group, verbose=0, dry_run=0, logger=None):
+def _make_stored_zipfile(base_name, base_dir, owner=None, group=None, verbose=0, dry_run=0, logger=None):
     """
     Create a non compressed zip file from all the files under 'base_dir'.
 
